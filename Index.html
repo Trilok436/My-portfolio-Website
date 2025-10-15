@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio • Your Name</title>
+  <meta name="description" content="Professional portfolio template. Includes About, Skills, Projects and Contact sections.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Portfolio</a>
+      <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="headline">Professional Portfolio</h1>
+          <p class="subhead">Clean, modern, and responsive portfolio template — ready to showcase skills and projects.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <img src="placeholder-avatar.png" alt="Placeholder avatar" class="avatar">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about container" aria-label="About">
+      <h2>About</h2>
+      <p>Professional web developer portfolio template. Replace this section with a short bio about yourself, education, experience and career goals. Emphasize accomplishments and technologies you use.</p>
+      <ul class="about-list">
+        <li><strong>Degree:</strong> B.Tech in Computer Science (example)</li>
+        <li><strong>Location:</strong> City, Country</li>
+        <li><strong>Availability:</strong> Open to internship/full-time roles</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section skills container" aria-label="Skills">
+      <h2>Skills</h2>
+      <div class="skills-grid" role="list">
+        <div class="skill" role="listitem"><h3>Java</h3><p>J2SE, J2EE, backend fundamentals</p></div>
+        <div class="skill" role="listitem"><h3>JavaScript</h3><p>ES6+, DOM, Fetch API</p></div>
+        <div class="skill" role="listitem"><h3>React</h3><p>Component-based UI</p></div>
+        <div class="skill" role="listitem"><h3>HTML & CSS</h3><p>Semantic markup & responsive layouts</p></div>
+        <div class="skill" role="listitem"><h3>Git & GitHub</h3><p>Version control & deployment</p></div>
+        <div class="skill" role="listitem"><h3>Databases</h3><p>MongoDB, SQL basics</p></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects container" aria-label="Projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="project-1.png" alt="Screenshot of Project 1" class="project-img">
+          <div class="project-body">
+            <h3>Project One</h3>
+            <p>Short description of project one — tech stack and key features.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live</a>
+              <a href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="project-2.png" alt="Screenshot of Project 2" class="project-img">
+          <div class="project-body">
+            <h3>Project Two</h3>
+            <p>Short description of project two — highlight your contribution or outcome.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live</a>
+              <a href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
+
+    <section id="contact" class="section contact container" aria-label="Contact">
+      <h2>Contact</h2>
+      <p>Use the form below to reach out. For assignment/demo, the form sends an email link.</p>
+
+      <form id="contact-form" class="contact-form" action="#" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required aria-required="true" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required aria-required="true" placeholder="you@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Your message"></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send (demo)</button>
+          <button type="button" id="clear-btn" class="btn btn-outline">Clear</button>
+        </div>
+        <p id="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Portfolio Template • Built for assignment</p>
+      <ul class="social">
+        <li><a href="#" aria-label="LinkedIn profile">LinkedIn</a></li>
+        <li><a href="#" aria-label="GitHub profile">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
